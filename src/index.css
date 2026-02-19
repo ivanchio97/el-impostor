@@ -1,3 +1,6 @@
+*{
+  user-select: none;
+}
 body{
   height: 100vh;
   background-color: #260356;
@@ -42,6 +45,12 @@ input:disabled{
   flex-direction: column;
   gap: 20px;
 }
+.hero2{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  gap: 20px;
+}
 h1{
   text-align: center;
 }
@@ -53,4 +62,21 @@ section{
   align-items: center;
   flex-wrap: wrap;
   margin-bottom: 20px;
+}
+.heart{
+  width:250px;
+  position:relative;
+  cursor:pointer;
+}
+.heart p{
+  position:absolute;
+  top: 15px;
+  left:85px;
+  font-size:70px;
+}
+.heart:active{
+  transform: scale(0.9)
+}
+.heart img{
+  width:100%;
 }
